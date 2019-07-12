@@ -49,6 +49,12 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Use sqlite3 as the database for Active Record
+end
+
+group :production do
+  gem 'rails_12factor', '~> 0.0.3'
+  gem 'pg', '~> 1.1', '>= 1.1.4'
 end
 
 group :test do
@@ -65,3 +71,4 @@ gem 'font-awesome-sass', '~> 5.9'
 gem 'bootstrap-sass-extras', '~> 0.0.2'
 gem 'devise', '~> 4.2'
 gem 'simple_form'
+
