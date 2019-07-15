@@ -140,6 +140,7 @@
     <div class="well">
       <h4>Recent Post</h4>
       <% @articles.each do |a| %>
+        created by: <%= link_to a.user.username %><br />
         <strong><%= link_to a.title, a %></strong>
         <p><%= truncate(a.body) %></p>
       <% end%>
