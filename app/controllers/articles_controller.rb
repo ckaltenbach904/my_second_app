@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  #it gives an error message when user is not logged in /signed up when user clicks on create an article button!
   before_action :authenticate_user!
   # GET /articles
   # GET /articles.json
