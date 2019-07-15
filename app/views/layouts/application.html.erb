@@ -7,24 +7,20 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="icon" href="public/beach.png" />
-  </head>
-
-  <body>
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <title>Workspace</title>
-      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-      <%= csrf_meta_tags %>
   </head>
   <body>
+    <style type="text/css">
+      #map {
+        width: 420px;
+        height: 300px;
+      }
+    </style>
     <%= render 'layouts/nav' %>
     <%= bootstrap_flash %>
-  <div class='container'>
-    <%= yield %>
-  </div>
-  <%= render 'layouts/foot' %>
+    <div class='container'>
+      <%= yield %>
+    </div>
+    <%= render 'layouts/foot' %>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAZeVA9kxPNh-FtzSgPapNoeI8mbDzcZsU&callback=initMap"></script>
   </body>
 </html>
