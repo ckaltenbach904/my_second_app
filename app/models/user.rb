@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   # a User can have many articles
   has_many :articles
+  has_many :comments
 end
