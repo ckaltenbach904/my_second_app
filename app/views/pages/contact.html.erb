@@ -1,93 +1,19 @@
-<!-- CONTACT PAGE -->
-
-<div id="contact">
-  <div class="container-fluid">
-  <form action="#" method="post">
-    <h1 class="display-4">Contact</h1>
-
-    <div class="row" id="contact_info">
-      <div class="col-sm-12 col-md-6">
-        <p><b>Tel. No: </b> <i class="fas fa-phone"></i> +49 6997701</p>
-
-        <p>
-          <b>Email:</b><i class="fas fa-envelope"></i>
-          <a href="catarina904@outlook.com">catarina904@outlook.com</a>
-        </p>
-
-        <address>
-          <b>Address:</b>
-          Engelsruhe 24, 65929 Frankfurt Am Main
-        </address>
-
-        <!--google map-->
-        <div id="map"></div>
-      </div>
-
-      <div class="col-sm-12 col-md-6">
-        <form>
-          <div class="form-group">
-            <label for="FullName">Full Name*</label>
-            <input
-              placeholder="Enter your name"
-              type="text"
-              id="name"
-              name="name"
-              required="required"
-              class="form-control"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="email">E-mail address*</label>
-            <input
-              placeholder="Enter your E-mail"
-              type="email"
-              id="email"
-              name="email"
-              required="required"
-              class="form-control"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone (optional)</label>
-            <input
-              type="tel"
-              class="form-control"
-              id="phone"
-              name="phone"
-              placeholder="+49 (0) 123-567890"
-              pattern="[0-9]{3}-[0-9]{6}"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message*</label>
-            <textarea
-              name="message"
-              class="form-control"
-              id="message"
-              style="resize:none; background-color: rgb(234, 236, 198); color: rgb(38, 70, 38); font-weight: normal;"
-              cols="40"
-              rows="6"
-              placeholder="Type your message here..."
-              required="required"
-            ></textarea>
-            <p id="visible-comment"></p>
-            <p id="char-count"></p>
-            <!--end of message-->
-            <br />
-            <button id="button" type="submit" class="btn btn-success">
-              Submit
-            </button>
-            <div class="bottom">
-              <h5>I will be looking forward for your call!</h5>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <h1>Contact Us</h1>
+    <p><b>Tel. No: </b> <i class="fas fa-phone"></i> +49 6997701</p>
+    <p>
+      <b>Email: </b><i class="fas fa-envelope"></i>
+      <a href="sfdabilene2006@gmail.com">sfdabilene2006@gmail.com</a>
+    </p>
+    <address>
+      <b>Address:</b>
+      Engelsruhe 24, 65929 Frankfurt Am Main
+    </address>
+    <ul class="list-unstyled">
+      <li>List Item</li>
+      <li>List Item 2</li>
+    </ul>
   </div>
+  <%= render 'pages/mailer' %>
 </div>
-<!-- end of contact section -->
-
