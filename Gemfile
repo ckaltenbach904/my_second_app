@@ -31,7 +31,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-rails'  
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'sdoc'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
