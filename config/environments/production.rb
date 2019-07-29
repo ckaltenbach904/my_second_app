@@ -94,14 +94,4 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: "https://my-second-app123.herokuapp.com/" }
 
   config.action_mailer.delivery_method = :smtp
-
-  config.action_mailer.smtp_settings = {
-    address: "smtp.mailgun.org",
-    port: 587,
-    user_name: "postmaster@sandboxe024e7ceaf6e448e8dd53b4a6b8ef688.mailgun.org",
-    password: "320b191bba4c63e5e3f17c126bfff209-f877bd7a-79e45eb1",
-    authentication: :plain,
-    domain: "sandboxe024e7ceaf6e448e8dd53b4a6b8ef688.mailgun.org",
-    enable_starttls_auto: true,
-  }
 end
